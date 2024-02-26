@@ -1,0 +1,17 @@
+.container{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+}
+
+.container h3{
+    background-color: white;
+    margin-bottom: 2px;
+    height: 75px;
+    line-height: 74px;
+    padding-left: 20px;
+    color: #44474e;
+    font-weight: 500;
+    font-size: 26px;
+}

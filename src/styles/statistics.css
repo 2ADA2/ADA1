@@ -1,0 +1,47 @@
+.statistics{
+    padding-top: 40px;
+    background: white;
+    height: calc(100% - 100px);
+    color: #6c727e;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin-bottom: 20px;
+    color: #418ed0;
+    border-left:2px solid #418ed0;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+h2 span{
+    font-size: 20px;
+    margin-left: 20px;
+    color:#6c727e;
+    font-weight: 400;
+}
+
+.stat-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.stat-info h3 {
+    font-size: 30px;
+    color: #44474e;
+    font-weight: 600;
+    width: 50%;
+    text-align: end;
+}
+
+.stat-info span{
+    font-size: 24px;
+    padding-left: 30px;
+    width: 50%;
+}
+

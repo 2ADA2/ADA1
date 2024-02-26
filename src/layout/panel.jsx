@@ -18,8 +18,8 @@ export const Panel = () => {
     return (
         <aside className = "panel" onClick = {(e) => handleChange(e.target)}>
             <nav className = "panel-nav">
-                <Link to="/statistycs" className = {(page == url + "/statistycs") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>Statistycs</Link>
-                <Link to="/rf-k8-info" className = {(page == url +"/rf-k8-info") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>RF K8 Info</Link>
+                <Link to="/statistics" className = {(page == url + "/statistics") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>Statistics</Link>
+                <Link to="/rf-k8-channels" className = {(page == url +"/rf-k8-channels") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>RF K8 Channels</Link>
                 <Link to="/module-list" className = {(page == url +"/module-list") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>Module List</Link>
                 <Link to="/json-model" className = {(page == url +"/json-model") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>JSON Model</Link>
             </nav>

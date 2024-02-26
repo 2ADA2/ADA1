@@ -1,0 +1,33 @@
+.channels{
+    background-color:white;
+    height: 100%;
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    
+}
+
+.channel{
+    border:1px solid #6c727e;
+    padding: 40px;
+    color: #44474e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 400px;
+    width: 500px;
+    gap:20px;
+}
+
+.channel span{
+    color:#6c727e;
+    margin-left:10px;
+    font-size: 24px;
+}
+.channel h4{
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
