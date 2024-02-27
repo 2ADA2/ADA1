@@ -1,0 +1,91 @@
+.module-info{
+    padding: 20px;
+    background: white;
+    color: #6c727e;
+    display: flex;
+    flex-direction: column;
+}
+
+h3::first-letter{
+    text-transform: uppercase;
+}
+
+.container .module-info h3{
+    font-weight: 400;
+}
+.container .module-info span{
+    font-weight: 300;
+    color:#6c727e;
+    font-size: 24px;
+    padding-left: 20px;
+    color: white;
+    width: 50%;
+}
+
+.container .module-info ul{
+    list-style: none;
+}
+
+.container .stat h3{
+    font-size: 24px;
+    width: 50%;
+    text-align: end;
+}
+.stat{
+    background-color: #35414f;
+    line-height: 20px;
+    height: 80px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.module-info .other{
+    display: flex;
+    margin-top: 100px;
+    min-height: 500px;
+    width: 100%;
+    justify-content: space-between;
+}   
+
+.features{
+    padding: 40px 20px;
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #35414f;
+    color:white;
+}
+
+.features ul li {
+    margin:20px 0;
+    margin-left: 40px;
+}
+
+.module-info section{
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #35414f;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.specifications span{
+    vertical-align: center;
+    line-height:  50px;
+}
+.specifications h3{
+    display: inline;
+}
+
+.page .module-info h3{
+    height: 50px;
+    line-height: 50px;
+    background-color: #00000000;
+    color: white;
+}
+.specifications h3 ::first-letter{
+    text-transform: uppercase;
+}

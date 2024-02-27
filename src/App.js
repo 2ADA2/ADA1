@@ -3,6 +3,11 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Home } from "./pages/home";
 import { Statistics } from "./pages/statistics";
 import { Channels } from "./pages/channels";
+import { ModuleList } from "./pages/modules";
+import { ModuleInfo } from "./pages/moduleInfo";
+import { JsonModel } from "./pages/jsonModel";
+import { Console } from "./pages/console";
+import { Updates } from "./pages/updates";
 
 function App() {
   return (
@@ -12,10 +17,11 @@ function App() {
           <Route index element = {<Home/>}></Route>
           <Route path='/statistics' element = {<Statistics/>}></Route>
           <Route path='/rf-k8-channels' element = {<Channels/>}></Route>
-          <Route path='/module-list' element = {<div></div>}></Route>
-          <Route path='/json-model' element = {<div></div>}></Route>
-          <Route path='/console' element = {<div></div>}></Route>
-          <Route path='/updates' element = {<div></div>}></Route>
+          <Route path='/module-list' element = {<ModuleList/>}></Route>
+          <Route path='/json-model' element = {<JsonModel/>}></Route>
+          <Route path='/console' element = {<Console/>}></Route>
+          <Route path='/updates' element = {<Updates/>}></Route>
+          <Route path='/module-list/info' element = {<ModuleInfo/>}></Route>
         </Route>
       </Routes>
     </div>

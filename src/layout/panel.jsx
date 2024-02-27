@@ -1,35 +1,38 @@
 import { useState, useEffect } from "react"
 import {Link, Outlet} from "react-router-dom";
 
+const src = "https://i.ibb.co/NrRhzPQ/icons8-react-native-50.png"
+
 export const Panel = () => {
-    const [page, setPage] = useState(0);
-    const url = "http://localhost:3000"
+    const [page, setPage] = useState(window.location.href);
 
     function handleChange(e) {
         if(e.href) setPage(e.href);
-        else if(e.parentNode.href) setPage(e.href);
+        else if(e.parentNode.href) setPage(e.parentNode.href);
+        
 
     }
 
     useEffect(() => {
-        setPage(window.location)
+        setPage(window.location.href);
+        console.log(page);
     })
 
     return (
         <aside className = "panel" onClick = {(e) => handleChange(e.target)}>
             <nav className = "panel-nav">
-                <Link to="/statistics" className = {(page == url + "/statistics") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>Statistics</Link>
-                <Link to="/rf-k8-channels" className = {(page == url +"/rf-k8-channels") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>RF K8 Channels</Link>
-                <Link to="/module-list" className = {(page == url +"/module-list") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>Module List</Link>
-                <Link to="/json-model" className = {(page == url +"/json-model") ? "opened":""}><img src = "./icons8-react-native-50.png"></img>JSON Model</Link>
+                <Link to="/statistics" className = {(page.indexOf("statistics") + 1) ? "opened":""}><img src = {src}></img>Statistics</Link>
+                <Link to="/rf-k8-channels" className = {(page.indexOf("rf-k8-channels")+1) ? "opened":""}><img src = {src}></img>RF K8 Channels</Link>
+                <Link to="/module-list" className = {(page.indexOf("module-list")+1) ? "opened":""}><img src = {src}></img>Module List</Link>
+                <Link to="/json-model" className = {(page.indexOf("json-model")+1) ? "opened":""}><img src = {src}></img>JSON Model</Link>
             </nav>
             <nav className = "other" >
-                <Link to="/console" className = {(page == url + "/console") ? "opened":""}>
+                <Link to="/console" className = {(page.indexOf("console")+1) ? "opened":""}>
                     <p className = 'icon'>{"</>"}</p>
                     <p>console</p>
                 </Link>
 
-                <Link to="/updates" className = {(page == url + "/updates") ? "opened":""}>
+                <Link to="/updates" className = {(page.indexOf("updates")+1) ? "opened":""}>
                         <p className = "icon">&#11015;</p>
                         <p>updates</p>                 
                 </Link>

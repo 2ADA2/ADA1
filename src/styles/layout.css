@@ -5,7 +5,14 @@ main{
 }
 
 .page{
-    width: 100%;
+    width: calc(100vw - 300px);
+    height: calc(100vh - 80px);
+    background-color: #eef1f6;
+    position: absolute;
+    left:300px;
+    top:80px;
+    min-width: 1000px;
+    min-height: 300px;
 }
 
 a{
@@ -23,10 +30,13 @@ header{
     display: flex;
     align-items: center;
     gap:10px;
-    min-width: 1000px;
+    width:100%;
+    position: fixed;    
 }
-h1{
+header h1{
     font-size: 50px;
+    color:white;
+
 }
 header img {
     height:70px;
@@ -34,14 +44,16 @@ header img {
 }
 
 .panel{
+    position: fixed;
     background-color: #35414f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 80px);
-    min-width: 300px;
+    width: 300px;
     color:white;
     padding-bottom: 20px;
+    top:80px;
+    height:calc(100vh - 80px);
 }
 
 .panel nav {
@@ -82,7 +94,7 @@ header img {
     flex-direction: row;
     padding: 0 30px;
     justify-content: space-between;
-    min-height: 60px;
+    min-height: 80px;
 }
 
 .panel .other a{

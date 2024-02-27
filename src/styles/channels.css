@@ -4,30 +4,32 @@
     padding:40px;
     display: flex;
     justify-content: center;
-    gap:5%;
+    gap:15%;
     
 }
 
 .channel{
     border:1px solid #6c727e;
-    padding: 40px;
+    padding: 10vh 2vw;
     color: #44474e;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     height: 400px;
-    width: 500px;
-    gap:20px;
+    width: 700px;
+    gap:2vh;
 }
 
 .channel span{
     color:#6c727e;
     margin-left:10px;
     font-size: 24px;
+    font-weight: 500;
 }
 .channel h4{
     font-size: 26px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 

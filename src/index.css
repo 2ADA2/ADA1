@@ -1,6 +1,8 @@
 @import url('./styles/home.css');
 @import url('./styles/statistics.css');
 @import url('./styles/channels.css');
+@import url('./styles/modules.css');
+
 @import url('./styles/layout.css');
 @import url('./styles/pagesStyle.css');
 
@@ -13,6 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #eef1f6;
+  overflow-x: hidden;
 }
 
 *{
@@ -21,3 +24,8 @@ body {
   box-sizing: border-box;
 }
 
+.App{
+  min-width: 1650px;
+  min-height: 700px;
+  height: 100%;
+}
