@@ -1,12 +1,9 @@
-.module-container:paren
-
 .page .module-container .container{
     height: auto;
 }
 
 .module-info{
     padding: 20px;
-    margin-top: 20px;
     background: white;
     color: #6c727e;
     display: flex;
