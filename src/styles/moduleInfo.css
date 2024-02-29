@@ -1,9 +1,18 @@
+.module-container:paren
+
+.page .module-container .container{
+    height: auto;
+}
+
 .module-info{
     padding: 20px;
+    margin-top: 20px;
     background: white;
     color: #6c727e;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 h3::first-letter{
@@ -32,13 +41,15 @@ h3::first-letter{
     text-align: end;
 }
 .stat{
-    background-color: #35414f;
+    background-color: #323e4b;
     line-height: 20px;
     height: 80px;
     margin: 0 10px 0 10px;
     display: flex;
     align-items:center;
     justify-content: center;
+    width: 100%;
+    max-width: 3000px;
 }
 
 .module-info .other{
@@ -47,14 +58,16 @@ h3::first-letter{
     min-height: 500px;
     width: 100%;
     justify-content: space-between;
+    max-width: 3000px;
 }   
 
 .features{
     padding: 40px 20px;
     width: 45%;
     box-sizing: border-box;
-    background-color: #35414f;
+    background-color: #323e4b;
     color:white;
+    max-width: 1500px;
 }
 
 .features ul li {
@@ -65,11 +78,12 @@ h3::first-letter{
 .module-info section{
     width: 45%;
     box-sizing: border-box;
-    background-color: #35414f;
+    background-color: #323e4b;
     padding: 40px;
     display: flex;
     flex-direction: column;
     min-width: 500px;
+    max-width: 1500px;
 }
 
 .specifications span{

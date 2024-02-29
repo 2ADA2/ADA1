@@ -2,7 +2,7 @@
     margin:20px;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 40px);
+    height: calc(100vh - 120px);
     min-height: 660px;
 }
 

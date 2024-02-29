@@ -33,16 +33,19 @@ export const ModuleInfo = () => {
     const module = store.module;
     const state = createState(module);
     return (
-        <div className="container">
-            <h2>Statistics <span>Statistics of the gateway</span></h2>
-            <h3>All technical specifications of the module:</h3>
-            <div className = "module-info">
-                {state.slice(0,state.length-2)}
-                <div className="other">
-                {state.slice(state.length-2,state.length)}
-                </div>
-            </div>            
+        <div className="module-container">
+            <div className="container module-container">
+                <h2>Specifications <span>Module {store.module.serial_number}</span></h2>
+                <h3>All technical specifications of the module:</h3>
+                <div className = "module-info">
+                    {state.slice(0,state.length-2)}
+                    <div className="other">
+                    {state.slice(state.length-2,state.length)}
+                    </div>
+                </div>            
+            </div>
         </div>
+
 
     )
 }
