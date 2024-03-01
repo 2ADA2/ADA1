@@ -4,17 +4,17 @@ import "../styles/moduleInfo.css";
 const createState = (module) => {
     let stats = [];
     for (let i in module){
-        if(i == "specifications") {
+        if(i === "specifications") {
             let specifications = [];
             for (let j in module[i]){
                 specifications.push(
                 <div className = "specifications">
-                    <h3>{j.replace("_", " ")} </h3><span>{module[i][j]}</span>
+                    <h3>{j.replace("_", " ")}:</h3><span>{module[i][j]}</span>
                     
                 </div>)
             }
             stats.push(<section>{specifications}</section>);
-        } else if (i == "features"){
+        } else if (i === "features"){
             let features =  module[i].map(e =><li>{e}</li>)
             stats.push(<div className = "features">
                 <ul><h3>features:</h3>{features}</ul>
