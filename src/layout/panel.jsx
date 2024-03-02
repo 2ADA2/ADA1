@@ -15,7 +15,6 @@ export const Panel = () => {
 
     useEffect(() => {
         setPage(window.location.href);
-        console.log(page);
     })
 
     return (

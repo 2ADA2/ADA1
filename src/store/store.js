@@ -8,7 +8,6 @@ class Store {
     setModule(module){
         this.module = Object.assign({}, module);
         localStorage.setItem("moduleInfo", JSON.stringify(module));
-        console.log(JSON.parse(localStorage.getItem("moduleInfo")))
     }
 }
 
